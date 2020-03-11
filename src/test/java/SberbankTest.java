@@ -44,8 +44,8 @@ public class SberbankTest {
         Actions ipotekaLink = new Actions(driver);
         ipotekaLink.moveToElement(driver.findElement(By.xpath(ipotekaLinkXpath))).click().perform();
 
-        waitPresence(By.xpath("//div[@data-pid='ColumnsContainer-7931862']"),3);
-        scrollToElement(By.xpath("//div[@data-pid='ColumnsContainer-7931862']"),160);
+        waitPresence(By.xpath("//div[contains(@data-pid, 'Iframe')]/parent::div"),3);
+        scrollToElement(By.xpath("//div[contains(@data-pid, 'Iframe')]/parent::div"),160);
 
         waitPresence(By.xpath(frameXpath),5);
         WebElement frame = driver.findElement(By.xpath(frameXpath));
