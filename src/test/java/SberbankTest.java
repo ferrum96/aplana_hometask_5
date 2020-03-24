@@ -20,7 +20,7 @@ public class SberbankTest {
 
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         driver = new ChromeDriver();
-        baseUrl = "https://www.sberbank.ru/ru/person/credits/home/buying_complete_house";
+        baseUrl = "https://www.sberbank.ru/ru/person";
         driver.get(baseUrl);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
